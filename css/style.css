@@ -1,8 +1,113 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06BBCC;
+    --primary: #01095C;
     --light: #F0FBFC;
     --dark: #181d38;
+}
+
+@font-face {
+    font-family: "nunito";
+    src: url("../Nunito/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Gravitas";
+    src: url("../Gravitas_One/GravitasOne-Regular.ttf");
+}
+
+.nav-link{
+    font-family: "nunito";
+    font-weight: 800;
+    font-style: normal;
+}
+.main_background_color{
+    background-color: #01095C;
+}
+.main_color{
+    color: #01095C;
+}
+.border_radius{
+    border-radius: 10px;
+}
+.pagination_end{
+    float: right !important;
+}
+.scrollable-container {
+    max-height: 650px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+.font_design {
+    font-family: "Gravitas";
+    font-weight: 400;
+    font-style: normal;
+}
+.lock_position_parent{
+    position: relative;
+}
+.lock_position{
+    position: absolute;
+    top: 8%;
+    right: 10%;
+}
+
+
+
+
+
+
+.faq-heading {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+  
+.faq-card {
+    border: 1px solid #dce0e8;
+    border-radius: 6px;
+    padding: 24px 20px;
+    margin-bottom: 12px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+  
+.faq-open-icon {
+    font-size: 22px;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    font-weight: 700;
+}
+  
+details[open] .faq-open-icon {
+    top: 18px;
+    right: 24px;
+}
+  
+details > summary {
+    list-style: none;
+}
+  
+details > summary::-webkit-details-marker {
+    display: none;
+}
+  
+details[open] summary {
+    color: #01095C;
+    font-weight: 500;
+}
+  
+details[open] .faq-card-spoiler {
+    display: inline-block;
+    padding-top: 8px;
+    color: #383838;
+}
+  
+.faq-aftertext {
+    text-align: center;
+    color: #383838;
 }
 
 .fw-medium {
@@ -152,6 +257,16 @@
 
 
 /*** Header carousel ***/
+.header-carousel .owl-carousel-item {
+    position: relative;
+    min-height: 750px;
+}
+.header-carousel .owl-carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
@@ -197,7 +312,8 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
+    /* background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg); */
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
